@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.yutadev31.tinyutils.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"MinecraftMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
