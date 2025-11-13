@@ -1,42 +1,42 @@
 {
-	"schemaVersion": 1,
-	"id": "tiny-utils",
-	"version": "${version}",
-	"name": "Tiny Utils",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/tiny-utils/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.yutadev31.tinyutils.TinyUtils"
-		],
-        "client": [
-            "com.yutadev31.tinyutils.TinyUtilsClient"
-        ],
-        "modmenu": [
-            "com.yutadev31.tinyutils.TinyUtilsModMenuIntegration"
-        ]
-	},
-	"mixins": [
-        "tiny-utils.mixins.json",
-        "tiny-utils.client.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.17.3",
-		"minecraft": "~1.21.7",
-		"java": ">=21",
-		"fabric-api": "*",
-        "fabric-key-binding-api-v1": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "tiny-utils",
+  "version": "${version}",
+  "name": "Tiny Utils",
+  "description": "",
+  "authors": [
+    "Yuta"
+  ],
+  "contact": {
+    "homepage": "https://github.com/yutadev31/tiny-utils",
+    "sources": "https://github.com/yutadev31/tiny-utils"
+  },
+  "license": "MIT",
+  "icon": "assets/tiny-utils/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.yutadev31.tinyutils.TinyUtils"
+    ],
+    "client": [
+      "com.yutadev31.tinyutils.TinyUtilsClient"
+    ],
+    "modmenu": [
+      "com.yutadev31.tinyutils.TinyUtilsModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "tiny-utils.mixins.json",
+    "tiny-utils.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "~1.21.7",
+    "java": ">=21",
+    "fabric-api": "*",
+    "fabric-key-binding-api-v1": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }
