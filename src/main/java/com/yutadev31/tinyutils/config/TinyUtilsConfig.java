@@ -13,6 +13,7 @@ public class TinyUtilsConfig {
     private static final File FILE = new File("config/tinyutils.json");
 
     public String titleSuffix = "";
+    public String positionFormat = "x%X, y%Y, z%Z";
 
     public static TinyUtilsConfig INSTANCE = new TinyUtilsConfig();
 

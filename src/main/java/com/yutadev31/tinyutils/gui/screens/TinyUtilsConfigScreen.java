@@ -22,6 +22,12 @@ public class TinyUtilsConfigScreen {
                 .setSaveConsumer(newValue -> TinyUtilsConfig.INSTANCE.titleSuffix = newValue)
                 .build());
 
+        general.addEntry(entryBuilder
+                .startStrField(Component.translatable("option.tinyutils.position-format"), TinyUtilsConfig.INSTANCE.positionFormat)
+                .setDefaultValue("x%X, y%Y, z%Z")
+                .setSaveConsumer(newValue -> TinyUtilsConfig.INSTANCE.positionFormat = newValue)
+                .build());
+
         builder.setSavingRunnable(TinyUtilsConfig::save);
 
         return builder.build();

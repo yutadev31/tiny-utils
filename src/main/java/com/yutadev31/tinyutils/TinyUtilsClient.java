@@ -20,7 +20,11 @@ public class TinyUtilsClient implements ClientModInitializer {
 
         var pos = player.blockPosition();
 
-        String text = pos.getX() + ", " + pos.getY() + ", " + pos.getZ();
+        String text = TinyUtilsConfig.INSTANCE.positionFormat
+                .replace("%X", pos.getX() + "")
+                .replace("%Y", pos.getY() + "")
+                .replace("%Z", pos.getZ() + "");
+
         Minecraft.getInstance().keyboardHandler.setClipboard(text);
     }
 }
