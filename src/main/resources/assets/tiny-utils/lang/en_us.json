@@ -1,0 +1,10 @@
+{
+  "title.tinyutils.config": "Tiny Utils Config",
+  "title.tinyutils.menu": "Tiny Utils Menu",
+  "category.tinyutils.general": "General",
+  "category.tinyutils.keybindings": "Tiny Utils",
+  "option.tinyutils.title-suffix": "Title Suffix",
+  "option.tinyutils.position-format": "Position Format",
+  "button.tinyutils.copy-position": "Copy Position",
+  "key.tinyutils.open-menu": "Option Menu"
+}

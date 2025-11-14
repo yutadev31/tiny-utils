@@ -11,7 +11,7 @@ import java.awt.*;
 
 public class ModKeyBindings {
     private static KeyMapping openScreenBinding;
-    private static final String CATEGORY = "category.tinyutils";
+    private static final String CATEGORY = "category.tinyutils.keybindings";
 
     public static void registerKeyBindings() {
         openScreenBinding = KeyBindingHelper.registerKeyBinding(new KeyMapping("key.tinyutils.open-menu", GLFW.GLFW_KEY_V, CATEGORY));

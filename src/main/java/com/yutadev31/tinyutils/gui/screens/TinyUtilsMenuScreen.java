@@ -14,7 +14,7 @@ public class TinyUtilsMenuScreen extends Screen {
 
     @Override
     protected void init() {
-        copyPositionButton = Button.builder(Component.literal("Copy Position"), button -> {
+        copyPositionButton = Button.builder(Component.translatable("button.tinyutils.copy-position"), button -> {
                     TinyUtilsClient.copyPosition();
                 })
                 .bounds(width / 2, 20, 200, 20)
