@@ -17,7 +17,7 @@ public class TinyUtilsMenuScreen extends Screen {
         copyPositionButton = Button.builder(Component.translatable("button.tinyutils.copy-position"), button -> {
                     TinyUtilsClient.copyPosition();
                 })
-                .bounds(width / 2, 20, 200, 20)
+                .bounds(width / 2 - 100, 20, 200, 20)
                 .build();
 
         addRenderableWidget(copyPositionButton);
